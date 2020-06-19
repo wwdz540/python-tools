@@ -6,6 +6,7 @@
 echo '[{"name":"王志平","dept":"开发部"},{"name":"王","dept":"开发部"}]' | python -m me.json.tool --path 1.name
 ```
 
+
 ```shell
  cat <<EOF | python -m me.json.tool --path roles.1.name
  {
@@ -18,3 +19,4 @@ echo '[{"name":"王志平","dept":"开发部"},{"name":"王","dept":"开发部"}
  }
 EOF
 ```
+‘ 路径字符串 roles.1.name 表示：roles属性中第1个对像中属性为name的值 
