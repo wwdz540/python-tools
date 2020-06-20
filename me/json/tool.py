@@ -41,7 +41,6 @@ def main():
             raise SystemExit(e)
     obj = parse(obj,path)
     with outfile:
-#        print(type(obj))
         if isinstance(obj,str):
             outfile.write(obj)
         else:    
@@ -59,9 +58,6 @@ def parse(obj,path):
         else:
           obj = obj[p] 
     return obj
-
-
-
 
 if __name__ == '__main__':
     main()
