@@ -54,7 +54,10 @@ def parse(obj,path):
     pathArr = path.split(".")
 
     for p in pathArr:
-        obj = obj[p] 
+        if isinstance(obj,list):
+           obj = obj[int(p)]
+        else:
+          obj = obj[p] 
     return obj
 
 
